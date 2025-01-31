@@ -1,0 +1,9 @@
+body{
+    background-color: fuchsia;
+}
+div{
+    height: :500px;
+    width: 70%;
+    background-color: white;
+    margin:50px
+}

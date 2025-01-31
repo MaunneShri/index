@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pages" id="one">
+        <h1>First Page</h1>
+        <a href="#one">First Page</a>
+        <a href="#two">Second Page</a>
+        <a href="#three">Third Page</a>
+        <a href="#four">Fourth Page</a>
+    </div>
+    <div class="pages" id="two">
+        <h1 class="sec">Second Page</h1>
+        <a href="#one">First Page</a>
+        <a href="#two">Second Page</a>
+        <a href="#three">Third Page</a>
+        <a href="#four">Fourth Page</a><br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span>
+    </div>
+    <div class="pages" id="three">
+        <h1 class="thr">Third Page</h1>
+        <a href="#one">First Page</a>
+        <a href="#two">Second Page</a>
+        <a href="#three">Third Page</a>
+        <a href="#four">Fourth Page</a><br><br><br><br>
+        <span class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span><br>
+        <span class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, amet.</span>
+    </div>
+    <div class="pages" id="four">
+        <h1 class="fou">Fourth Page</h1>
+        <a href="#one">First Page</a>
+        <a href="#two">Second Page</a>
+        <a href="#three">Third Page</a>
+        <a href="#four">Fourth Page</a>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .pages{
+        margin: 0;
+        padding: 0;
+        height:700px;
+        width: 100%;
+    }
+    h1{
+        color: azure;
+        text-align: center;
+    }
+    .pages a{
+        color: wheat;
+        padding: 20px;
+    }
+    .pages a:hover{
+        color:chartreuse;
+        background-color: darkgrey;
+    }
+    #one{
+        background-image: url("https://static.toiimg.com/img/91227987/Master.jpg");
+    }
+    #two{
+        color:darkorange;
+    }
+    #three{
+        color: darkorange;
+        text-align: center;
+    }
+    #four{
+        background-color: rgb(223, 170, 224);
+    }
+    .sec{
+        color: black;
+    }
+    .thr{
+        color: black;
+    }
+    .fou{
+        color: black;
+        border-top: 10px solid ;
+    }
+</style>

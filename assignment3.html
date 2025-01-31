@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#section1">Section1</a>
+        <a href="#section2">Section2</a>
+        <a href="#section3">Section3</a>
+        <a href="#section4">Section4</a>
+    </div>
+    <div class="one">
+        <div class="sec section1" id="section1"></div>
+    </div>
+    <div class="sec section2" id="section2"><br>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span><br>
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span><br>
+    </div>
+    <div class="sec section3" id="section3"><br>
+        <span>Lorem ipsum dolor sit amet.</span><br><br><br>
+        <span>Lorem ipsum dolor sit amet.</span><br><br><br>
+        <span>Lorem ipsum dolor sit amet.</span><br><br><br>
+        <span>Lorem ipsum dolor sit amet.</span><br>
+    </div>
+    <div class="sec section4" id="section4"></div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .navbar{
+            background-color: rgb(119, 165, 238);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            z-index: 1000;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: rgb(6, 8, 11);
+            position: relative;
+        }
+        .navbar a:hover{
+            cursor: pointer;
+            padding: 15px;
+            background-color: rgb(214, 223, 94);
+        }
+        .text{
+           margin-top: 60px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width: 100%;
+        }
+        .sec{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .section1{
+            height: 400px;
+            background-image: url("https://media.macphun.com/img/uploads/macphun/blog/2255/zac-ong-JHN1-mpgXjo-unsplash.jpg");
+            background-size: cover;
+        }
+        .section2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .section3{
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+        .section span{
+            margin: 10px 0;
+            text-align: center;
+        }
+        .section4{
+            border-top: 10px solid rgb(38, 83, 56);
+            width: 100%;
+            height: 20px;
+            background-color: rgb(187, 121, 93);
+        }
+    </style>
+</body>
+</html>

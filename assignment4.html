@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Verification</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    input[type="number"] {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    #result {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .allowed {
+        color: green;
+    }
+    .not-allowed {
+        color: red;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Age Verification</h2>
+    <input type="number" id="age" placeholder="Enter your age">
+    <button onclick="verifyAge()">Verify</button>
+    <div id="result"></div>
+</div>
+
+<script>
+function verifyAge() {
+    var age = parseInt(document.getElementById('age').value);
+    var resultElement = document.getElementById('result');
+    
+    if (age >= 18) {
+        resultElement.innerHTML = "Allowed";
+        resultElement.className = "allowed";
+    } else {
+        resultElement.innerHTML = "Not Allowed";
+        resultElement.className = "not-allowed";
+    }
+}
+</script>
+</body>
+</html>

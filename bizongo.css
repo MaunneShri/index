@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+.first{
+    height: 300px;
+    background-color: gray;
+}
+.first .navbar{
+    position: absolute;
+    width: 60%;
+    border: 2px solid red;
+    left: 300px;
+}
+.navbar a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.middle-text{
+    text-align: center;
+    color: #fff;
+}
+.firstnav a{
+    position: relative;
+    top: 38px;
+}
+.secondnav a{
+    margin-left: 400px;
+}  
